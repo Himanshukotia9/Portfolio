@@ -78,11 +78,11 @@ section{
     padding: 0 9%;
     background: url('/images/portfolio.png') no-repeat;
     background-size: 35%;
-    background-position: 850px;
+    background-position: right;
 }
 
 .home-content{
-    max-width: 60rem;   
+    max-width: 70rem;   
 }
 
 .home-content h1{
@@ -383,6 +383,10 @@ span{
     font-size: 2rem;
 }
 
+.education-content .content h4{
+    font-size: 1.5rem;
+}
+
 .education-content .content p{
     font-size: 1.6rem;
     padding-top: .5rem;
@@ -494,3 +498,4 @@ span{
  .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
     width: 67%;
  }
+
