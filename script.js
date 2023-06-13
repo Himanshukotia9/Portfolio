@@ -39,4 +39,9 @@ window.onscroll = () =>{
     //remove toggle icon and navbar when click navbar links(Scroll)
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
+
+    // animate footer on scroll
+    let footer = document.querySelector('footer');
+
+    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
