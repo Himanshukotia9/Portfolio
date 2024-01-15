@@ -2,7 +2,7 @@
 Welcome to my portfolio website! This website showcases my education and skills in web development. It serves as a comprehensive overview of my work and capabilities.
 
 Website: 
-You can access my portfolio website by visiting "[https://himanshukotia9.github.io/Portfolio/portfolio.html](https://himanshukotia9.github.io/Portfolio/)". Feel free to explore and navigate through the different sections and projects.
+You can access my portfolio website by visiting "". Feel free to explore and navigate through the different sections and projects.
 
 Table of Contents: 
 Home
