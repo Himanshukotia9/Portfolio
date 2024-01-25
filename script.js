@@ -45,3 +45,43 @@ window.onscroll = () =>{
 
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+
+// form submission
+
+const form = document.querySelector('form');
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const phone = document.getElementById("number");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+
+function sendEmail(){
+const bodyMessage = `Full Name: ${fullName.value}<br> Email: ${email.value}<br> Phone Number: ${phone.value}<br> Message: ${message.value}<br>`
+
+    Email.send({
+        SecureToken: "5768dba2-20a4-4c05-a5cd-042d03824011",
+        To : 'himanshukotia9@gmail.com',
+        From : "himanshukotia9@gmail.com",
+        Subject : subject.value,
+        Body : bodyMessage
+    }).then(
+      message => {
+        if (message == "OK"){
+            Swal.fire({
+                title: "Success!",
+                text: "Message sent successfully!",
+                icon: "success"
+              });
+        }
+      }
+    );
+}
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    sendEmail();
+
+    form.reset();
+    return false;
+});
