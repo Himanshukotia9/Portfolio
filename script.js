@@ -28,7 +28,7 @@ window.onscroll = () =>{
         }
         // for animation that repeats on scroll use this
         else{
-            sec.classList.remove('show-animate');
+            // sec.classList.remove('show-animate');
         }
     })
 
